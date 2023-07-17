@@ -6,58 +6,141 @@
         <meta name="description" content="This is my first HTML5 exercise for CodeLab">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="icon" href="html5.png" type="image/x-icon">
         <link rel="stylesheet" href="main.css" type="text/css"> 
         <title>HTML5 exercise</title>
        
     </head>
     <body>
-        <h1>Hello World</h1>
-        <nav>
-            <ul>
-                <li><a href="#html">HTML Leaning</a></li>
-                <li><a href="#vacation">Vacation Planning</a></li>
-            </ul>
-        </nav>
+        <header>
+            <h1>Hello World</h1>
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li><a href="#html">HTML Leaning</a></li>
+                    <li><a href="#vacation">Vacation Planning</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <hr>
-        <section id="html">
-        <h2>Hello World</h2>
-        <p>This is my first web page</p>
-        
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how:</p>
-            <ul>
-            <li>I learn more about web dev</li>
-            <li>I plan out my Schedule</li>
-            <li>I use resources from <a href="https://developer.mozilla.com"> <abbr title="Mozilla Developer Network">MDN</abbr></a></li></ul>
+        <main>
+        <article id="html">
+            <h2>Hello World</h2>
+            <p>This is my first web page</p>
+            <section>
+        <h3>HTML5</h3>
+            <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="HTML5 Logo" width="300" height="300">
+            <figure>
+                <figcaption>HTML Example Code</figcaption>
+            <p> <code>&lt;h1&gt;Hello World Example&lt;/h1&gt;</code></p>
+            </figure>
+            <h3>My Daily Schedule</h3>
+            <p>Let me tell you how:</p>
+                <ul>
+                <li>I learn more about web dev</li>
+                <li>I plan out my Schedule</li>
+                <li>I use resources from <a href="https://developer.mozilla.com"> <abbr title="Mozilla Developer Network">MDN</abbr></a></li></ul>
+                    <aside>
+                        <details>
+                            <summary>Guess how many <mark>hours</mark> I code</summary>
+                            <p>I start at <time datetime="08:00">8 am</time> and code for <time datetime="PT3H"> 3 hrs</time>
+                                </p>
+                        </details>
+                    </aside>
+                    <table>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">
+                                Time
+                            </th>
+                            <th scope="col">Activity                           
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td> <time datetime="08:00">8AM</time> - <time datetime="11:00">11AM</time> </td>
+                            <td>Coding</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td> <time datetime="11:00">11AM</time> - <time datetime="12:00">12PM</time> </td>
+                            <td>Coding</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td> <time datetime="12:00">12PM</time> - <time datetime="17:00">5PM</time> </td>
+                            <td>Study</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2"> Remianing Hrs </td>
+                            <td>Free Time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep and Relax</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">This is my Schedule</td>
+                        </tr>
+                    </tfoot>
+                    </table>
+            </section>
+        </article>
+        <hr>
+        <article id="vacation">
+            <h2>Vacation planner</h2>
+            <p>I have been working very hard, <em>really need a vacation.</em></p>
+            <p>I would love visiting beaches for relaxation.</p>
+            <section>
+            <h3>Places I would like to visit</h3>
+            <img src="img/caribbean.jpg" alt="Caribbean Beach" title="Caribbean Beach" width="400" height="225" loading="lazy">
+            <ol>
+                <li><p><strong>No cold places.</strong> </p></li>
+                <li><p>Caribbean</p><address>
+                    4770 Sandy Creek Drive<br>
+                    Caribbean<br>
+                    
+                </address></li>
+
+            </ol>
+            <figure>
+                <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5'o Clock somewhere" width="400" height="267" loading="lazy">
+                <figcaption>Cancun Vacation</figcaption>
+            </figure>
+            </section>
+            <section>
+            <h3>Places not to visit</h3>
+            <dl>
+                <dt>North Pole</dt>
+                <dd>Very Cold</dd>
+                <dt>South Pole</dt>
+                <dd>Also Cold</dd>
+                <dt>Mountain Tops</dt>
+                <dd>Also Cold</dd>
+            </dl>
         </section>
+    </article>
+    <hr>
+    <article id="contact">
+        <h2>Contact Me</h2>
+        <p>Would like here from you</p>
+
+    </article>
+</main>
         <hr>
-        <section id="vacation">
-        <h2>Vacation planner</h2>
-        <p>I have been working very hard, <em>really need a vacation.</em></p>
-        <p>I would love visiting beaches for relaxation.</p>
-        
-        <h3>Places I would like to visit</h3>
-        <ol>
-            <li><p><strong>No cold places.</strong> </p></li>
-            <li><p>Miami</p><address>
-                4770 Sandy Creek Drive<br>
-                Miami<br>
-                Florida
-            </address></li>
-        </ol>
-        <h3>Places not to visit</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>Very Cold</dd>
-            <dt>South Pole</dt>
-            <dd>Also Cold</dd>
-            <dt>Mountain Tops</dt>
-            <dd>Also Cold</dd>
-        </dl>
-    </section>
-        <hr>
+       <footer>
         &lt;&lt; &lt;&lt; Copyright &copy; <a href="about.html">Jagadeswari</a>  &gt;&gt;&gt;&gt;
         <hr>
         <a href="#">Back To Top</a>
+    </footer>
     </body>
 </html>
